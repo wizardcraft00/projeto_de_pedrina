@@ -5,58 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NEXUS TECH</title>
     <link rel="stylesheet" href="estilo.css">
+    <link rel="icon" type="image/jpg" href="./imgs/icone.jpg">
     
 </head>
 <body>
     <header class="cabecalho" id="cabecalho">
         <h1 class = "logo">NEXUS TECH</h1>
         <nav class = "menu">
+            <a href="index.html">Inicio</a>
             <a href="detalhes.html">Detalhes</a>
             <a href="produtos.html">Produtos</a>
-            <a href="#">Ofertas</a>
-            <a href="#">Contato</a>
         </nav>
         <div class = "carrinho">
             <span>&#9825</span>
             <a href="#">Carrinho</a>
         </div>
     </header>
-    <hr>
     <main>
         <section class ="banner">
-            <div class = "banner-texto">
-                <p class = "banner-texto-p">ACESSÓRIOS PARA O SEU SETUP</p>
-                <h2>Eleve seu setup
-                a outro nivel</h2>
-                <p>
-                    Encontre teclados, mouses e headsets
-                    para acompanhhar seu ritmo.
-                </p>
-                <a href="produtos.html">
-                    Explorar produtos <span>&rarr;</span>
-                </a>
-            </div>
-            <div class = "banner-imagem">
-                <img src="./imgs/teclado.jpg" alt="Teclado e mouse gamer"/>
+            <div class="banner-principal">
+                <div class = "banner-texto">
+                    <p class = "banner-texto-p">ACESSÓRIOS PARA O SEU SETUP</p>
+                    <h2>Eleve seu setup
+                    a outro nivel</h2>
+                    <p>
+                        Encontre teclados, mouses e headsets
+                        para acompanhhar seu ritmo.
+                    </p>
+                    <a href="produtos.html">
+                        Explorar produtos <span>&rarr;</span>
+                    </a>
+                </div>
+                <div class = "banner-imagem">
+                    <img src="./imgs/setup_gamer.jpg" alt="Teclado e mouse gamer"/>
+                </div>
             </div>
         </section>
-        <section class = "categoria">
-            <div>
-
-            </div>
-            <div>
-
-            </div>
-            <div>
-
-            </div>
-            <div>
-                
+        <section class = "destaque">
+            <h2 class = "produto">Escolha por Categorias</h2>
+            <div class = "categorias">
+                <div class = "categoria">
+                    <h3>Teclados</h3>
+                    <p>mecânica e RGB</p>
+                </div>
+                <div class = "categoria">
+                    <h3>Mouses</h3>
+                    <p>precisão e comforto</p>
+                </div>
+                <div class = "categoria">
+                    <h3>Headsets</h3>
+                    <p>som e comunicação</p>
+                </div>
+                <div class = "categoria">
+                    <h3>acessorios</h3>
+                    <p>complete seu setup</p>
+                </div>
             </div>
         </section>
         <section class = "destaque">
             <h2 class = "produto">Produtos em destaque</h2>
-            <div class = "cards">
+            <div class = "cards" id = "card">
                 <div class = "card">
                     <img src = "./imgs/teclado_mecanico.jpg"
                     alt = "Teclado mecanico"/>
@@ -96,15 +104,14 @@
             </div>
         </section>
     </main>
-    <hr>
-    <footer>
-        <div>
+    <footer class = "rodape">
+        <div class = "footer-logo">
             <p>NEXUS TECH| tecnlogia ao seu alcance</p>
         </div>
-        <div>
-            <p>sobre | contato | instagram</p>
+        <div class = "footer-links">
+            <p>sobre &bull; contato &bull; instagram</p>
         </div>
     </footer>
-    <!-- <script src="js/script.js"></script> -->
+    <script src="js/script.js"></script>
 </body>
 </html>    
