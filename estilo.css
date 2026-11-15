@@ -80,22 +80,26 @@ body{
 .banner-texto-p{
     color: #8b5cf6;
 }
+.destaque{
+    padding: 20px;
+}
 .cards {
     display: flex;
     gap: 20px;
+    justify-content: center;
 }
 .card{
-    background-color: var(--texto);
+    background-color: var(--painel);
     padding: 15px;
     width: 200px;
     border-radius: 10px;
     color: #f5f1ff;
 }
 .card p{
-    color: var(--roxo);
+    color: var(--texto);
 }
 .card h2{
-    color: var(--fundo);
+    color: var(--lavanda);
 }
 .card img{
     width: 100%;
@@ -106,14 +110,15 @@ body{
     color: var(--roxo);
 }
 .card small{
-    color: var(--lavanda);
+    color: var(--texto);
 }
-.produto h2{
+.produto{
     text-align: left;
     color: var(--roxo);
-    font-size: 22px;
-    margin-bottom: 20px;
-    margin-left: 20px;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0 0 16px 0;
 }
 /*RODAPÉ*/
 footer {
