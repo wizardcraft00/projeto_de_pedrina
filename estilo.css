@@ -42,18 +42,20 @@
     display: flex;
     gap: 25px;
 }
-.menu a {
-    color: var(--texto);
-    text-decoration: none;
-}
 .menu a{
     color: var(--texto);
-    transition: 0,5s ease;
+    transition: 0.5s ease;
     text-decoration: none;
+    border: 1px solid transparent;
 }
 .menu a:hover {
-    background-color: var(--secundario);
-    color: var(--fundo);
+    color: var(--claro);
+    border: 1px solid ;
+    border-radius: 10px;
+    padding: 1px;
+}
+.carrinho a:hover {
+    color: var(--claro);
     border: 1px solid ;
     border-radius: 10px;
     padding: 1px;
@@ -112,9 +114,9 @@ body{
     padding: 20px;
 }
 .cards {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
+    display: grid;
+    grid-template-columns:  repeat(5, 1fr);
+    gap: 25px;
 }
 .card{
     background-color: var(--cards);
@@ -169,7 +171,7 @@ body{
 }
 .categotia{
     color: var(--destaques);
-    transition: 0,5s ease;
+    transition: 0.5s ease;
     text-decoration: none;
 }
 .categoria:hover {
@@ -177,6 +179,7 @@ body{
     color: var(--fundo);
     border: 1px solid ;
     border-radius: 10px;
+    transition: 0.5s ease;
 }
 .categoria h3{
     font-size: 18px;
@@ -209,4 +212,33 @@ body{
 .footer-links p{
     color: var(--texto);
     text-decoration: none;
+}
+
+/*PAGINA DE PRODUTOS*/
+.ativos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--claro);
+    gap: 25px;
+}
+.ativos a{
+    text-decoration: none;
+    color: var(--texto);
+    border-bottom: 2px solid transparent;
+    padding-bottom: 5px;
+    transition-duration: 0.5s ;
+}
+.ativos a:hover{
+    color: var(--claro);
+    border-bottom: 2pxsolid var(--claro);
+}
+.ativos h3{
+    margin: 0;
+}
+@media (max-width: 768px) {
+  .banner-principal { flex-direction: column; }
+  .banner-texto, .banner-imagem { width: 100%; }
+  .cards, .categorias { flex-wrap: wrap; }
+  .card, .categoria { width: 100%; max-width: 320px; }
 }

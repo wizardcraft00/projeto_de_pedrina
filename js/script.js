@@ -9,7 +9,7 @@ window.addEventListener("scroll", function(){
     }
 })
 window.addEventListener("scroll", function(){
-    if(window.scrollY > 50){
+    if(window.scrollY > 10){
     header.classList.add("reduzido");
     }else{
     header.classList.remove("reduzido");
